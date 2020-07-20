@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@500&display=swap" rel="stylesheet">
+<head>
+	<title>Sound Record & Play</title>
+</head>
+<style type="text/css">
+	body{
+        background: #70e1f5;
+        background: -webkit-linear-gradient(to left, #ffd194, #70e1f5);
+        background: linear-gradient(to left, #ffd194, #70e1f5); 
+      }
+</style>
+<body>
+	<div class='container p-4 my-2 center' >
+        <h5>Sound Record & Play<h5>
+        <button type="button" onclick="window.location.href='{{ url_for( 'sound') }}';">Record</button><br>
+		<button type="button" onclick="window.location.href='{{ url_for( 'play_audio') }}';">Play</button><br><br>
+        <button type="button" onclick="window.location.href='{{ url_for( 'speech_text') }}';">Speech_text</button>
+
+    </div>
+</body>
+</html>
